@@ -13,7 +13,7 @@ const ProductDetailContainer = () => {
             .then(response => response.json()) //convertir la respuesta a json
             .then(productos => {
                 const producto = productos.find(item => item.id === parseInt(id))
-                console.log(producto)
+                //console.log(producto)
                 setProduct(producto)
             })
     }, []);

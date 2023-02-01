@@ -23,7 +23,7 @@ export const CarritoProvider = (props) => {
         if (isInCart(product.id)) {
             const index = carrito.findIndex(prod => prod.id === product.id);
             const aux = [...carrito]
-            aux[index].amount = amount;
+            aux[index].cant = amount; //cant x amount
             setCarrito(aux);
         }
         else {
@@ -45,16 +45,15 @@ export const CarritoProvider = (props) => {
         //devuelve todos los item con id distinto de id
     }
 
-    const getProductsQuantity = () => {
-        return carrito.reduce((acum, prod) => acum += prod.amount, 0)
+    const getProductsQuantity = () => {        
+        return carrito.reduce((acum, prod) => acum += prod.cant, 0) //cant x amount
         //recorro todo el carrito y acumulo la suma en acum
     }
 
     const totalPrice = () => {
         return carrito.reduce((acum, prod) => acum += (prod.price * prod.amount), 0)
     }
-
-    console.log(carrito)
+    
     return(
         <CarritoContext.Provider value={{carrito, isInCart, addProduct, emptyCart, removeItem, getProductsQuantity, totalPrice}}>
             {props.children}
