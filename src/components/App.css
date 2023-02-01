@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap');
+
+.marginDown {
+    margin-bottom: 1%;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Toto', serif;
+}
+
+.centerProducts {
+    justify-content: center;
+}
+
+/* Tarjetas de los productos */
+
+.card {
+    /*width: 15%;*/
+    /*align-items: center;
+    margin-left: 1%;*/
+    margin: 1%;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    min-height: 376px;    
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+.card-body{
+    /*width: 100%;*/
+    /* Agregado nuevo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productImage {
+    width: 50%;
+}
+
+.card-text{
+    font-family: 'Noto Serif Toto', serif;
+    text-align: center;
+}
+
+/* Tarjetas de los productos vistos en detalle de forma individual */
+
+.detailCard {
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    min-height: 376px;
+}
+
+.detailCard:hover {
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+.detailArticleTitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.detailArticlePrice{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.detail-card-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailProductImage {
+    width: 70%;
+}
+
+.detail-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
