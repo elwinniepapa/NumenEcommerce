@@ -7,7 +7,7 @@
         "modelo": "Y510P",
         "precio": 140000,
         "stock": 30,
-        "img": "https://i.ibb.co/gjG19Tw/laptop.jpg",
+        "img": "../images/laptop.jpg",
         "alt": "img_notebook",
         "cuotas": 12,
         "envio": "MDP"
@@ -20,7 +20,7 @@
         "modelo": "G82",
         "precio": 85000,
         "stock": 40,
-        "img": "https://i.ibb.co/9h42b0w/cellphone.jpg",
+        "img": "../images/cellphone.jpg",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -33,7 +33,7 @@
         "modelo": "G52",
         "precio": 65000,
         "stock": 10,
-        "img": "https://i.ibb.co/9h42b0w/cellphone.jpg",
+        "img": "../images/cellphone.jpg",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -46,7 +46,7 @@
         "modelo": "50\" UN50AU7000",
         "precio": 125000,
         "stock": 5,
-        "img": "https://i.ibb.co/pQw2Lvf/tv.jpg",
+        "img": "../images/tv.jpg",
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": ""
@@ -59,7 +59,7 @@
         "modelo": "Ryzen 3-3250u 8gb 512gb Ssd Windows 11",
         "precio": 200000,
         "stock": 7,
-        "img": "https://i.ibb.co/xmqnh8S/desktop.jpg",
+        "img": "../images/desktop.jpg",
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": ""
@@ -72,7 +72,7 @@
         "modelo": "Intel I3 8gb 256gb Ssd Windows 10",
         "precio": 156000,
         "stock": 3,
-        "img": "https://i.ibb.co/xmqnh8S/desktop.jpg",
+        "img": "../images/desktop.jpg",
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": ""
@@ -85,7 +85,7 @@
         "modelo": "55\" 55UP7750PSB",
         "precio": 154999,
         "stock": 9,
-        "img": "https://i.ibb.co/pQw2Lvf/tv.jpg",
+        "img": "../images/tv.jpg",
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": ""
@@ -98,7 +98,7 @@
         "modelo": "Redmi 9C",
         "precio": 72490,
         "stock": 25,
-        "img": "https://i.ibb.co/9h42b0w/cellphone.jpg",
+        "img": "../images/cellphone.jpg",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -111,7 +111,7 @@
         "modelo": "825GB Standard",
         "precio": 315000,
         "stock": 3,
-        "img": "https://i.ibb.co/HzDxCvP/console.jpg",
+        "img": "../images/console.jpg",
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP"
@@ -124,7 +124,7 @@
         "modelo": "512GB Standard",
         "precio": 249999,
         "stock": 2,
-        "img": "https://i.ibb.co/HzDxCvP/console.jpg",
+        "img": "../images/console.jpg",
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP"
@@ -137,7 +137,7 @@
         "modelo": "A03 Core 32gb",
         "precio": 41999,
         "stock": 30,
-        "img": "https://i.ibb.co/9h42b0w/cellphone.jpg",
+        "img": "../images/cellphone.jpg",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
