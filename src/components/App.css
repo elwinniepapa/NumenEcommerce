@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+.span-white{
+    color: white;
+}
+
 /* Tarjetas de los productos */
 
 .card {
