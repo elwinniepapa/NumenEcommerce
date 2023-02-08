@@ -24,7 +24,7 @@ const Cart = () => {
                         <div className="row centerProducts">
 
                             {carrito.map(prod =>
-                                <div className="card col-xl-2">
+                                <div className="card col-xl-2" key={prod.id}>
                                     <div className="card-img">
                                         <img src={prod.img} className="card-img-top productImage" alt={prod.alt} />
                                     </div>
