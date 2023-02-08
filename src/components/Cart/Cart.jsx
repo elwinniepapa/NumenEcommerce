@@ -36,7 +36,25 @@ const Cart = () => {
                                         <button className="btn btn-danger fontNoto" onClick={() => removeItem(prod.id)}>Eliminar</button>
                                     </div>
                                 </div>
-                            )}                            
+                            )}
+
+                            <div className="row centerProducts">
+                                <div className="col-xl-2">
+                                    <p>Resumen de la compra: ${new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
+                                </div>
+                            </div>
+
+                            <div className="row centerProducts">
+                                <div className="col-xl-2 flex-center">
+                                    <button className="btn btn-danger fontNoto" onClick={emptyCart}>Vaciar carrito</button>
+                                </div>
+                                <div className="col-xl-2 flex-center">
+                                    <button className="btn btn-danger fontNoto"><Link className="nav-link" to={"/"}>Continuar comprando</Link></button>
+                                </div>
+                                <div className="col-xl-2 flex-center">
+                                    <button className="btn btn-danger fontNoto"><Link className="nav-link" to={"/checkout"}>Finalizar compra</Link></button>
+                                </div>
+                            </div>
 
                         </div>
                     </div>

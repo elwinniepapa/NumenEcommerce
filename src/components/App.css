@@ -16,6 +16,13 @@
     color: white;
 }
 
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* Tarjetas de los productos */
 
 .card {
