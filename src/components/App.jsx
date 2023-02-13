@@ -6,8 +6,12 @@ import ProductDetailContainer from './ProductDetailContainer/ProductDetailContai
 import Cart from './Cart/Cart';
 import { CarritoProvider } from '../context/CarritoContext';
 
+//test firebase
+import { addBDD, getProducts } from '../assets/firebase'
 
 function App() {
+  //addBDD()
+  getProducts()
   return (
     <div>
       {/* El carrito Provider envuelve todo porque lo voy a utilizar en todas las secciones */}

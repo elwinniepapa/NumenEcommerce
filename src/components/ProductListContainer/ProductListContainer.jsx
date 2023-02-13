@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ProductListGenerator from "../ProductListGenerator/ProductListGenerator";
+import { getProducts } from "../../assets/firebase";
 
 const ProductListContainer = () => {
 
@@ -11,16 +12,14 @@ const ProductListContainer = () => {
     useEffect(() => { //con este hook consulto el archivo json (para llamadas asincronicas)
 
         if (category) {
-            fetch('../json/products.json')
-                .then(promise => promise.json()) //cuando tengas estos productos (.then)
+            getProducts()
                 .then(product => {
                     const products = product.filter(producto => producto.idCategoria === parseInt(category))
                     const filtratedItems = ProductListGenerator(products)
                     setProducts(filtratedItems)
                 })
         } else { //es undefined, estoy en el index
-            fetch('./json/products.json')
-                .then(promise => promise.json())
+            getProducts()
                 .then(product => {
                     const items = ProductListGenerator(product)
                     setProducts(items)
