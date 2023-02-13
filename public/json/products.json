@@ -7,7 +7,7 @@
         "modelo": "Y510P",
         "precio": 140000,
         "stock": 30,
-        "img": "../images/laptop.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/laptop.jpg?alt=media&token=307085fe-c033-4cf7-ab45-b2ad78ae01a8",
         "alt": "img_notebook",
         "cuotas": 12,
         "envio": "MDP"
@@ -20,7 +20,7 @@
         "modelo": "G82",
         "precio": 85000,
         "stock": 40,
-        "img": "../images/cellphone.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/cellphone.jpg?alt=media&token=afb5db75-1115-4f3f-8f41-15e6c511156a",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -33,7 +33,7 @@
         "modelo": "G52",
         "precio": 65000,
         "stock": 10,
-        "img": "../images/cellphone.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/cellphone.jpg?alt=media&token=afb5db75-1115-4f3f-8f41-15e6c511156a",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -46,7 +46,7 @@
         "modelo": "50\" UN50AU7000",
         "precio": 125000,
         "stock": 5,
-        "img": "../images/tv.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/tv.jpg?alt=media&token=0c1500fb-1a1b-489d-8535-a6a480b851af",
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": ""
@@ -59,7 +59,7 @@
         "modelo": "Ryzen 3-3250u 8gb 512gb Ssd Windows 11",
         "precio": 200000,
         "stock": 7,
-        "img": "../images/desktop.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/desktop.jpg?alt=media&token=c39790ad-16d9-46ce-b509-56d566cba9af",
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": ""
@@ -72,7 +72,7 @@
         "modelo": "Intel I3 8gb 256gb Ssd Windows 10",
         "precio": 156000,
         "stock": 3,
-        "img": "../images/desktop.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/desktop.jpg?alt=media&token=c39790ad-16d9-46ce-b509-56d566cba9af",
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": ""
@@ -85,7 +85,7 @@
         "modelo": "55\" 55UP7750PSB",
         "precio": 154999,
         "stock": 9,
-        "img": "../images/tv.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/tv.jpg?alt=media&token=0c1500fb-1a1b-489d-8535-a6a480b851af",
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": ""
@@ -98,7 +98,7 @@
         "modelo": "Redmi 9C",
         "precio": 72490,
         "stock": 25,
-        "img": "../images/cellphone.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/cellphone.jpg?alt=media&token=afb5db75-1115-4f3f-8f41-15e6c511156a",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
@@ -111,7 +111,7 @@
         "modelo": "825GB Standard",
         "precio": 315000,
         "stock": 3,
-        "img": "../images/console.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/console.jpg?alt=media&token=9c58d528-b8d5-44f7-99f3-691f6b341c7f",
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP"
@@ -124,7 +124,7 @@
         "modelo": "512GB Standard",
         "precio": 249999,
         "stock": 2,
-        "img": "../images/console.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/console.jpg?alt=media&token=9c58d528-b8d5-44f7-99f3-691f6b341c7f",
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP"
@@ -137,7 +137,7 @@
         "modelo": "A03 Core 32gb",
         "precio": 41999,
         "stock": 30,
-        "img": "../images/cellphone.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/numenecommerce-a72e2.appspot.com/o/cellphone.jpg?alt=media&token=afb5db75-1115-4f3f-8f41-15e6c511156a",
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP"
