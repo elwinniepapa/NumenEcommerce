@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, addDoc, collection, getDocs, getDoc, doc, updateDoc } from "firebase/firestore"
+import { getFirestore, addDoc, collection, getDocs, getDoc, doc, updateDoc, deleteDoc } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -57,4 +57,9 @@ export const getProduct = async (id) => {
 export const updateProduct = async (id, info) => {
     await updateDoc(doc(db, 'productos', id), info)
     return "Producto actualizado"
+}
+
+export const deleteProduct = async (id) => {
+    await deleteDoc(doc(db, 'productos', id))
+    return "Producto eliminado"
 }

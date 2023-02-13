@@ -14,15 +14,16 @@ const ProductListContainer = () => {
         if (category) {
             getProducts()
                 .then(product => {
-                    const products = product.filter(producto => producto.idCategoria === parseInt(category))
+                    const products = product.filter(producto => producto.idCategoria === parseInt(category)).filter(prod=> prod.stock > 0)
                     const filtratedItems = ProductListGenerator(products)
                     setProducts(filtratedItems)
                 })
         } else { //es undefined, estoy en el index
             getProducts()
-                .then(product => {
-                    const items = ProductListGenerator(product)
-                    setProducts(items)
+                .then(items => {
+                    const products = items.filter(prod => prod.stock > 0)
+                    const itemsFiltered = ProductListGenerator(products)
+                    setProducts(itemsFiltered)
                 })
         }
     }, [category]); //se ejecuta useEffect cuando hago un cambio en la categoria de mis objetos
