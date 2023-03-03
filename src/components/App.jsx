@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar.jsx';
 import ProductListContainer from './ProductListContainer/ProductListContainer';
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
 import Cart from './Cart/Cart';
+import Home from './Home/Home';
 import Checkout from './Checkout/Checkout';
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -28,7 +29,8 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path='/' element={<ProductListContainer />}></Route>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/all' element={<ProductListContainer />}></Route>
             <Route path='/category/:category' element={<ProductListContainer />}></Route>
             <Route path='/product/:id' element={<ProductDetailContainer />}></Route>
             <Route path='/cart' element={<Cart />}></Route>

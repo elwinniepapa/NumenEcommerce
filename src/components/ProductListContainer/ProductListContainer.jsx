@@ -22,6 +22,7 @@ const ProductListContainer = () => {
             getProducts()
                 .then(items => {
                     const products = items.filter(prod => prod.stock > 0)
+                    console.log(products)
                     const itemsFiltered = ProductListGenerator(products)
                     setProducts(itemsFiltered)
                 })
