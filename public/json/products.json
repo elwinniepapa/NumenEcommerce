@@ -11,7 +11,8 @@
         "alt": "img_notebook",
         "cuotas": 12,
         "envio": "MDP",
-        "oferta": "si"
+        "oferta": "si",
+        "nuevo": "no"
     },
     {
         "id": 2,
@@ -25,7 +26,8 @@
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP",
-        "oferta": "si"
+        "oferta": "no",
+        "nuevo": "si"        
     },
     {
         "id": 3,
@@ -39,7 +41,8 @@
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP",
-        "oferta": "no"
+        "oferta": "si",
+        "nuevo": "no"        
     },
     {
         "id": 4,
@@ -53,7 +56,8 @@
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": "",
-        "oferta": "si"
+        "oferta": "no",
+        "nuevo": "si"
     },
     {
         "id": 5,
@@ -67,7 +71,8 @@
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": "",
-        "oferta": "no"
+        "oferta": "no",
+        "nuevo": "si"
     },
     {
         "id": 6,
@@ -81,7 +86,8 @@
         "alt": "img_desktop",
         "cuotas": 24,
         "envio": "",
-        "oferta": "si"
+        "oferta": "si",
+        "nuevo": "no"
     },
     {
         "id": 7,
@@ -95,7 +101,8 @@
         "alt": "img_smarttv",
         "cuotas": 24,
         "envio": "",
-        "oferta": "no"
+        "oferta": "no",
+        "nuevo": "si"
     },
     {
         "id": 8,
@@ -109,7 +116,8 @@
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP",
-        "oferta": "no"
+        "oferta": "no",
+        "nuevo": "si"
     },
     {
         "id": 9,
@@ -123,7 +131,8 @@
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP",
-        "oferta": "no"
+        "oferta": "no",
+        "nuevo": "si"
     },
     {
         "id": 10,
@@ -137,7 +146,8 @@
         "alt": "img_console",
         "cuotas": 12,
         "envio": "MDP",
-        "oferta": "si"
+        "oferta": "si",
+        "nuevo": "no"
     },
     {
         "id": 11,
@@ -151,6 +161,37 @@
         "alt": "img_celular",
         "cuotas": 3,
         "envio": "MDP",
-        "oferta": "si"
+        "oferta": "si",
+        "nuevo": "no"
+    },
+    {
+        "id": 12,
+        "idCategoria": 6,
+        "nombre": "Auricular",
+        "marca": "JBL",
+        "modelo": "Tune 510BT",
+        "precio": 13999,
+        "stock": 40,
+        "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-52c12.appspot.com/o/handset.jpg?alt=media&token=66f4fe48-a8dd-4771-bf12-8dd346122844",
+        "alt": "img_auricular",
+        "cuotas": 3,
+        "envio": "MDP",
+        "oferta": "si",
+        "nuevo": "no"
+    },
+    {
+        "id": 13,
+        "idCategoria": 6,
+        "nombre": "Auricular",
+        "marca": "Sony",
+        "modelo": "WH-CH510",
+        "precio": 16999,
+        "stock": 25,
+        "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-52c12.appspot.com/o/handset.jpg?alt=media&token=66f4fe48-a8dd-4771-bf12-8dd346122844",
+        "alt": "img_auricular",
+        "cuotas": 3,
+        "envio": "MDP",
+        "oferta": "no",
+        "nuevo": "si"
     }  
 ]

@@ -36,7 +36,8 @@ export const addBDD = async () => { //async le decis que es consulta asincronica
             alt: prod.alt,
             cuotas: prod.cuotas,
             envio: prod.envio,
-            oferta: prod.oferta
+            oferta: prod.oferta,
+            nuevo: prod.nuevo
         })
     })
     console.log(products)

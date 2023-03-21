@@ -2,13 +2,14 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import { getProducts } from "../../assets/firebase";
 import OfferListGenerator from "../OfferListGenerator/OfferListGenerator";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const OfferListContainer = () => {
 
-    const [productsoffer, setProducts] = useState([]); //valor inicial es un array []
+    const [productsoffer, setProductsOffer] = useState([]); //valor inicial es un array []
 
     const settings = {
         dots: true,
@@ -16,7 +17,7 @@ const OfferListContainer = () => {
         centerMode: true,
         arrows: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
@@ -25,9 +26,8 @@ const OfferListContainer = () => {
     useEffect(() => {
         getProducts()
             .then(items => {
-                const productsoffer = items.filter(prod => prod.oferta === "si")
-                const itemsFiltered = OfferListGenerator(productsoffer)
-                setProducts(itemsFiltered)
+                const productsoffer = items.filter(prod => prod.oferta === "si")                
+                setProductsOffer(productsoffer)                
             })
     }, []);
 
@@ -58,55 +58,36 @@ const OfferListContainer = () => {
                 <div className="col-5 fontNoto offerText marginDown">
                     Ofertas destacadas
                 </div>
-            </div>
+            </div>            
             <div className="row centerProducts">
-                {productsoffer}
-                {/*
-                <Slider {...settings}>                                        
-                    <div>
-                        1
-                    </div>
-                    <div>
-                        1
-                    </div>
-                    <div>
-                        1
-                    </div>
-                    <div>
-                        1
-                    </div>
+                <Slider {...settings}>
+                    {
+                        /*(() => {
+                            if (productsoffer) { 
+                                console.log(productsoffer)
+                            }
+                            else { console.log("No existe el objeto") }
+                        })()*/
+
+                        productsoffer.length > 0 && productsoffer.map(product => (
+                            <div key={product.id}>
+                                <div className="card col-xl-10">
+                                    <div className="card-img">
+                                        <img src={product.img} className="card-img-top productImage" alt={product.alt} />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">{product.nombre} {product.marca} {product.modelo}</p>
+                                        <p className="card-text">$ {product.precio}</p>
+                                        <button className="btn btn-primary fontNoto"><Link className="nav-link" to={`/product/${product.id}`}>Ver producto</Link></button>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Slider>
-                */}
             </div>
         </div>
     );
-
-
-    /*const [productsoffer, setProducts] = useState([]); //valor inicial es un array []
-
-    useEffect(() => {
-        getProducts()
-            .then(items => {
-                const productsoffer = items.filter(prod => prod.oferta === "si")
-                console.log(productsoffer)
-                const itemsFiltered = ProductListGenerator(productsoffer)
-                setProducts(itemsFiltered)
-            })
-    }, []);
-
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-5 fontNoto offerText">
-                    Ofertas destacadas
-                </div>
-            </div>
-            <div className="row centerProducts">
-                {productsoffer}
-            </div>
-        </div>
-    );*/
-
 }
 
 export default OfferListContainer;
