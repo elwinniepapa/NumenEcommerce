@@ -14,7 +14,7 @@ const ProductListContainer = () => {
         if (category) {
             getProducts()
                 .then(product => {
-                    const products = product.filter(producto => producto.idCategoria === parseInt(category)).filter(prod=> prod.stock > 0)
+                    const products = product.filter(producto => producto.idCategoria === parseInt(category)).filter(prod => prod.stock > 0)
                     const filtratedItems = ProductListGenerator(products)
                     setProducts(filtratedItems)
                 })
@@ -31,6 +31,28 @@ const ProductListContainer = () => {
 
     return (
         <div className="container">
+            <div class="row justify-content-md-center marginDown">
+                <div className="col col-lg-2 offerText">
+                    {
+                        (() => {
+                            switch (category) {
+                                case "1":
+                                    return "Notebooks"
+                                case "2":
+                                    return "Celulares"
+                                case "3":
+                                    return "Smart Tv"
+                                case "4":
+                                    return "Desktop PC"
+                                case "5":
+                                    return "Consolas"
+                                case "6":
+                                    return "Auriculares"
+                            }
+                        })()
+                    }
+                </div>
+            </div>
             <div className="row centerProducts">
                 {products}
             </div>
