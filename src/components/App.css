@@ -1,7 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap');
 
 .marginDown {
-    margin-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+.minusWidth {
+    width: 80%;
+}
+
+/*.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+    color: blue;
+}
+
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+    color: blue;
+}*/
+
+.offerText {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .fontNoto {
@@ -10,6 +32,17 @@
 
 .centerProducts {
     justify-content: center;
+}
+
+.span-white {
+    color: white;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Tarjetas de los productos */
@@ -22,7 +55,7 @@
     -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
-    min-height: 376px;    
+    min-height: 376px;
 }
 
 .card:hover {
@@ -31,7 +64,7 @@
     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
 }
 
-.card-body{
+.card-body {
     /*width: 100%;*/
     /* Agregado nuevo */
     display: flex;
@@ -40,7 +73,7 @@
     align-items: center;
 }
 
-.card-img{
+.card-img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -51,7 +84,7 @@
     width: 50%;
 }
 
-.card-text{
+.card-text {
     font-family: 'Noto Serif Toto', serif;
     text-align: center;
 }
@@ -71,17 +104,17 @@
     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.13);
 }
 
-.detailArticleTitle{
+.detailArticleTitle {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.detailArticlePrice{
+.detailArticlePrice {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.detail-card-img{
+.detail-card-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,9 +124,9 @@
     width: 70%;
 }
 
-.detail-card-body{
+.detail-card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }

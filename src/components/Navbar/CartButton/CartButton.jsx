@@ -1,4 +1,5 @@
 import { useCarritoContext } from "../../../context/CarritoContext";
+import { Link } from "react-router-dom";
 
 const CartButton = () => {
 
@@ -6,8 +7,12 @@ const CartButton = () => {
 
     return (
         <div>
-            <button className="btn btn-dark">Carrito</button>
-            <span>{ getProductsQuantity() }</span>
+            <span className="span-white">{getProductsQuantity()} </span>
+            <button className="btn btn-dark">
+                <Link to={"/cart"} className="nav-link">
+                    Carrito
+                </Link>
+            </button>            
         </div>
     );
 }

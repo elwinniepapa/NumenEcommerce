@@ -7,12 +7,13 @@ const Categorias = () => {
             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Categorias</a>
                 <div className="dropdown-menu" aria-labelledby="themes">
-                    <Link className="dropdown-item" to={"/category/1"}>Notebooks</Link>
-                    {/*<div className="dropdown-divider" /> */}
+                    <Link className="dropdown-item" to={"/category/6"}>Auriculares</Link>
                     <Link className="dropdown-item" to={"/category/2"}>Celulares</Link>
-                    <Link className="dropdown-item" to={"/category/3"}>Smart TV</Link>
-                    <Link className="dropdown-item" to={"/category/4"}>Desktop PC</Link>
                     <Link className="dropdown-item" to={"/category/5"}>Consolas</Link>
+                    <Link className="dropdown-item" to={"/category/4"}>Desktop PC</Link>
+                    <Link className="dropdown-item" to={"/category/1"}>Notebooks</Link>
+                    <Link className="dropdown-item" to={"/category/3"}>Smart TV</Link>
+                    {/*<div className="dropdown-divider" /> */}                    
                 </div>
             </li>
         </div>
