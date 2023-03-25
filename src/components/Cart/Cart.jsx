@@ -9,13 +9,26 @@ const Cart = () => {
         <div>
             {carrito.length === 0
                 ? /* Ternario que significa SI */
-                <div>
-                    <h1>Carrito vacío</h1>
-                    <button className="btn btn-dark">
-                        <Link to={"/"} className="nav-link">
-                            Ir al inicio
-                        </Link>
-                    </button>
+                <div className="container">
+                    <div className="row justify-content-center marginDown">                        
+                        <div className="col-md-auto">
+                            <h2>Carrito vacío</h2>
+                        </div>                        
+                    </div>
+                    <div className="row justify-content-center marginDown">
+                        <div className="col-md-auto">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-52c12.appspot.com/o/emptycart.png?alt=media&token=c41b1bc0-aa79-4e57-b836-2c16d34e4b97" alt="carrito_vacio" />
+                        </div>
+                    </div>
+                    <div className="row justify-content-center marginDown">
+                        <div className="col-md-auto">
+                            <button className="btn btn-info">
+                                <Link to={"/"} className="nav-link">
+                                    Explorar ofertas
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 : /* Ternario que significa NO */
                 <div>
@@ -38,9 +51,11 @@ const Cart = () => {
                                 </div>
                             )}
 
-                            <div className="row centerProducts">
-                                <div className="col-xl-2">
-                                    <p>Resumen de la compra: ${new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
+                            <div className="marginDown"></div>
+
+                            <div className="row centerProducts marginDown">
+                                <div className="col col-xl-auto">
+                                    <h4>Monto total de la compra: ${new Intl.NumberFormat('de-DE').format(totalPrice())}</h4>
                                 </div>
                             </div>
 
@@ -49,10 +64,10 @@ const Cart = () => {
                                     <button className="btn btn-danger fontNoto" onClick={emptyCart}>Vaciar carrito</button>
                                 </div>
                                 <div className="col-xl-2 flex-center">
-                                    <button className="btn btn-danger fontNoto"><Link className="nav-link" to={"/"}>Continuar comprando</Link></button>
+                                    <button className="btn btn-info fontNoto"><Link className="nav-link" to={"/"}>Continuar comprando</Link></button>
                                 </div>
                                 <div className="col-xl-2 flex-center">
-                                    <button className="btn btn-danger fontNoto"><Link className="nav-link" to={"/checkout"}>Finalizar compra</Link></button>
+                                    <button className="btn btn-success fontNoto"><Link className="nav-link" to={"/checkout"}>Finalizar compra</Link></button>
                                 </div>
                             </div>
 
@@ -60,7 +75,7 @@ const Cart = () => {
                     </div>
                 </div>
             }
-        </div>
+        </div >
     );
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import OfferListContainer from '../OfferListContainer/OfferListContainer';
+import OfferListGenerator from '../OfferListGenerator/OfferListGenerator';
 import NewProducts from '../NewProducts/NewProducts';
 
 const Home = () => {
     return (
         <div>
-            <OfferListContainer />
+            <OfferListGenerator />
             <NewProducts />            
         </div>
     );

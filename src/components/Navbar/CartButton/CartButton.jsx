@@ -7,8 +7,8 @@ const CartButton = () => {
 
     return (
         <div>
-            <span className="span-white">{getProductsQuantity()} </span>
-            <button className="btn btn-dark">
+            <span className="text-success">({getProductsQuantity()} productos) </span>
+            <button className="btn btn-info">
                 <Link to={"/cart"} className="nav-link">
                     Carrito
                 </Link>
