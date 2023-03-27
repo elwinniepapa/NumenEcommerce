@@ -37,17 +37,17 @@ const ProductListContainer = () => {
                         (() => {
                             switch (category) {
                                 case "1":
-                                    return "Notebooks"
+                                    return <div className="center-text bold-text category-text">Notebooks</div>;
                                 case "2":
-                                    return "Celulares"
+                                    return <div className="center-text bold-text category-text">Celulares</div>;
                                 case "3":
-                                    return "Smart Tv"
+                                    return <div className="center-text bold-text category-text">Smart TV</div>;
                                 case "4":
-                                    return "Desktop PC"
+                                    return <div className="center-text bold-text category-text">Desktop PC</div>;
                                 case "5":
-                                    return "Consolas"
+                                    return <div className="center-text bold-text category-text">Consolas</div>;
                                 case "6":
-                                    return "Auriculares"
+                                    return <div className="center-text bold-text category-text">Auriculares</div>;
                             }
                         })()
                     }

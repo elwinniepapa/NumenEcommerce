@@ -8,6 +8,19 @@
     width: 80%;
 }
 
+.center-text {
+    font-family: 'Noto Serif Toto', serif;
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.category-text{
+    font-size: 1.7rem;
+}
+
 /*.slick-prev {
     left: 3% !important;
     z-index: 1;
