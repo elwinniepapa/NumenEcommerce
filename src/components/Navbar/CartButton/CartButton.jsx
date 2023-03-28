@@ -7,7 +7,7 @@ const CartButton = () => {
 
     return (
         <div>
-            <span className="text-success">({getProductsQuantity()} productos) </span>
+            <span className="text-success">({getProductsQuantity()} artículos) </span>
             <button className="btn btn-info">
                 <Link to={"/cart"} className="nav-link">
                     Carrito
